@@ -8,6 +8,8 @@ class NewsDetail extends Controller
 {
     public function show()
     {
-        return view('NewsDetail');
+        $id = request('id');
+        $items = \App\NewsItem::all();
+        return view('newsDetail', ['id' => $id], ['items' => $items]);
     }
 }
