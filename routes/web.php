@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+return view('welcome');
 });
 
-Route::get('/about', 'AboutController@show')->name('about');
+Route::get('/welcome', 'App\Http\Controllers\Welcome@show')->name('welcome');
+
+Route::get('/news', 'App\Http\Controllers\News@show')->name('news');
+
+Route::get('/newsdetail', 'App\Http\Controllers\NewsDetail@show')->name('newsDetail');
+
+Route::get('/newsadd', 'App\Http\Controllers\NewsAdd@show')->name('newsAdd');
