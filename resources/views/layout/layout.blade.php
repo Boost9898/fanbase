@@ -34,6 +34,16 @@
             line-height: 1.5
         }
 
+        .links > a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
         *, :after, :before {
             box-sizing: border-box;
             border: 0 solid #e2e8f0
@@ -394,6 +404,11 @@
     </style>
 </head>
 <body class="antialiased">
+<div class="links">
+    <a href="{{route('news')}}">News</a>
+    <a href="{{route('newsDetail')}}">News detail</a>
+    <a href="{{route('newsAdd')}}">News add</a>
+</div>
 @yield('content')
 </body>
 </html>
