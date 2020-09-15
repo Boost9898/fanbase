@@ -34,13 +34,22 @@
                         <div class="flex items-center">
                             <div class="ml-4 text-lg leading-7 font-semibold">
                                 <a class="text-gray-900 dark:text-white">
+                                    @if($id > count($items))
+                                        <h1>Deze pagina is pakot!</h1>
+                                    @endif
+
                                     @foreach($items as $item)
-                                        @if($item['id']==$id   )
+                                        @if($item['id']==$id)
                                             <li>{{$item['title']}}</li>
                                             <li>{{$item['description']}}</li>
+                                            <img src="{{$item['image']}}">
                                             <br>
                                         @endif
+
                                     @endforeach
+
+
+                                    {{--                                    {{$items[2]['id']}}--}}
                                 </a>
                             </div>
                         </div>

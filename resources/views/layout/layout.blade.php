@@ -407,7 +407,7 @@
 <div class="links">
     <a href="{{route('news')}}">News</a>
     <a href="{{route('newsDetail')}}">News detail</a>
-    <a href="{{route('newsAdd')}}">News add</a>
+    <a href="{{route('news.create')}}">News/create</a>
 </div>
 @yield('content')
 </body>
