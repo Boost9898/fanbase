@@ -45,11 +45,7 @@
                                             <img src="{{$item['image']}}">
                                             <br>
                                         @endif
-
                                     @endforeach
-
-
-                                    {{--                                    {{$items[2]['id']}}--}}
                                 </a>
                             </div>
                         </div>

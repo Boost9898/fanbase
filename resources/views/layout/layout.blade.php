@@ -405,8 +405,8 @@
 </head>
 <body class="antialiased">
 <div class="links">
+    <a href="{{route('home')}}">Home</a>
     <a href="{{route('news')}}">News</a>
-    <a href="{{route('newsDetail')}}">News detail</a>
     <a href="{{route('news.create')}}">News/create</a>
 </div>
 @yield('content')
