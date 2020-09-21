@@ -33,7 +33,8 @@
                     <div class="p-6">
                         <div class="flex items-center">
                             <div class="ml-4 text-lg leading-7 font-semibold"><a
-                                    class="text-gray-900 dark:text-white">Create</a></div>
+                                    class="text-gray-900 dark:text-white">Create</a>
+                            </div>
                         </div>
                     </div>
                 </div>
