@@ -42,7 +42,7 @@
                                         @if($item['id']==$id)
                                             <li>{{$item['title']}}</li>
                                             <li>{{$item['description']}}</li>
-                                            <img src="{{$item['media']}}">
+                                            <img alt="placeholder" src="{{$item['media']}}">
                                             <br>
                                         @endif
                                     @endforeach
