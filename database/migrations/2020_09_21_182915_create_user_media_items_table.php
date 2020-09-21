@@ -14,7 +14,6 @@ class CreateUserMediaItemsTable extends Migration
     public function up()
     {
         Schema::create('user_media_items', function (Blueprint $table) {
-            $table->id();
             $table->string('user_id');
             $table->string('media_items_id');
             $table->timestamps();

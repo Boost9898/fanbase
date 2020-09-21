@@ -33,7 +33,7 @@
                     <div class="p-6">
                         <div class="flex items-center">
                             <div class="ml-4 text-lg leading-7 font-semibold"><a
-                                    class="text-gray-900 dark:text-white">News</a></div>
+                                    class="text-gray-900 dark:text-white">Media</a></div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         <div class="flex items-center">
                             <div class="ml-4 text-lg leading-7 font-regular text-gray-900 dark:text-white">
                                 @foreach($items as $item)
-                                    <a href="{{route('news')}}/{{$item['id']}}">{{$item['title']}}</a><br>
+                                    <a href="{{route('media')}}/{{$item['id']}}">{{$item['title']}}</a><br>
                                     <br>
                                 @endforeach
                             </div>

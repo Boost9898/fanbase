@@ -19,9 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Changed the name 'image' to 'media' since the database changed the name of it">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Added a many-to-many table">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cbef6df-0b50-4519-94c4-40a29981b3de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cbef6df-0b50-4519-94c4-40a29981b3de.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newsCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_21_153902_create_user_media_items_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/newsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/newsId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +212,7 @@
       <workItem from="1600070892200" duration="17069000" />
       <workItem from="1600182047720" duration="1399000" />
       <workItem from="1600189394192" duration="4103000" />
-      <workItem from="1600672484269" duration="15229000" />
+      <workItem from="1600672484269" duration="18546000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -283,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600689767166</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added a many-to-many table">
+      <created>1600704397585</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600704397585</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +326,8 @@
     <MESSAGE value="- Cleaned up files that weren't used" />
     <MESSAGE value="Made a connection to local database" />
     <MESSAGE value="Changed the name 'image' to 'media' since the database changed the name of it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the name 'image' to 'media' since the database changed the name of it" />
+    <MESSAGE value="Added a many-to-many table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a many-to-many table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -322,10 +338,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="939" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600679830689" />
-    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600695101687">
+    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600711960099">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600695101687" />
+    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600711960099" />
     <state width="311" height="457" key="HiddenNamespacesPopup" timestamp="1600676058052">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -355,9 +371,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600183523713" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1600194301375">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1600712624149">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600194301375" />
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600712624149" />
   </component>
 </project>

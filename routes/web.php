@@ -17,11 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/welcome', 'App\Http\Controllers\Welcome@show')->name('welcome');
-
 Route::get('/home', 'App\Http\Controllers\Welcome@show')->name('home');
-Route::get('/news', 'App\Http\Controllers\NewsController@index')->name('news');
-Route::get('/news/create', 'App\Http\Controllers\NewsController@create')->name('news.create');
-Route::post('/news/store', 'App\Http\Controllers\NewsController@store')->name('news.store');
-Route::get('/news/{id}', 'App\Http\Controllers\NewsController@show')->name('news.show');
-
+Route::get('/media', 'App\Http\Controllers\MediaController@index')->name('media');
+Route::get('/media/create', 'App\Http\Controllers\MediaController@create')->name('media.create');
+Route::post('/media/store', 'App\Http\Controllers\MediaController@store')->name('media.store');
+Route::get('/media/{id}', 'App\Http\Controllers\MediaController@show')->name('media.show');

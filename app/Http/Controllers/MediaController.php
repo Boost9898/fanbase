@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\MediaItem;
 use Illuminate\Http\Request;
 
-class NewsController extends Controller
+class MediaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class NewsController extends Controller
     public function index()
     {
         $items = MediaItem::all();
-        return view('news', ['items' => $items]);
+        return view('media', ['items' => $items]);
     }
 
     /**
@@ -25,7 +25,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        return view('newsCreate');
+        return view('mediaCreate');
     }
 
     /**
@@ -50,7 +50,7 @@ class NewsController extends Controller
     {
         $id = request('id');
         $items = MediaItem::all();
-        return view('newsId', ['id' => $id], ['items' => $items]);
+        return view('mediaId', ['id' => $id], ['items' => $items]);
     }
 
     /**
