@@ -32,8 +32,30 @@
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-6">
                         <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a
-                                    class="text-gray-900 dark:text-white">Create</a>
+                            <div class="ml-4 text-lg leading-7 font-semibold">
+                                <a class="text-gray-900 dark:text-white">Create</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="ml-4 text-lg leading-7 font-semibold">
+                                <a class="text-gray-900 dark:text-white">
+                                    <form action="" method="post">
+                                        <label for="title">Title:</label><br>
+                                        <input type="text" id="title" name="title" placeholder="title of the item"><br><br>
+                                        <label for="lname">Band:</label><br>
+                                        <input type="band" id="band" name="band" placeholder="band name"><br><br>
+                                        <label for="lname">Media:</label><br>
+                                        <input type="band" id="media" name="media" placeholder="Link to media item"><br><br>
+                                        <input type="submit" value="Verzenden">
+                                    </form>
+                                </a>
                             </div>
                         </div>
                     </div>
