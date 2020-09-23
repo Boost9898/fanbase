@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MediaItem;
+use App\Models\MediaItems;
 use Illuminate\Http\Request;
 
-class MediaController extends Controller
+class MediaItemController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,9 @@ class MediaController extends Controller
      */
     public function index()
     {
-        $items = MediaItem::all();
+//        WAAROM KENT HIJ DE 'ORDERBY' NIET?
+//        $items = MediaItems::orderBy('created_at', 'desc')->get();
+        $items = MediaItems::all();
         return view('media', ['items' => $items]);
     }
 
@@ -36,8 +38,22 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'media' => 'required',
+        ]);
+
+        $mediaItem = new MediaItems();
+        $mediaItem->title = $request->get('title');
+        $mediaItem->description = $request->get('description');
+        $mediaItem->media = $request->get('media');
+
+        $mediaItem->save();
+        return redirect('media')->with('success', 'Media item toegevoegd aan de database!');
+
     }
+
 
     /**
      * Display the specified resource.
@@ -49,7 +65,7 @@ class MediaController extends Controller
     public function show()
     {
         $id = request('id');
-        $items = MediaItem::all();
+        $items = MediaItems::all();
         return view('mediaId', ['id' => $id], ['items' => $items]);
     }
 

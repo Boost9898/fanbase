@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'App\Http\Controllers\Welcome@show')->name('home');
-Route::get('/media', 'App\Http\Controllers\MediaController@index')->name('media');
-Route::get('/media/create', 'App\Http\Controllers\MediaController@create')->name('media.create');
-Route::post('/media/store', 'App\Http\Controllers\MediaController@store')->name('media.store');
-Route::get('/media/{id}', 'App\Http\Controllers\MediaController@show')->name('media.show');
+Route::get('/media', 'App\Http\Controllers\MediaItemController@index')->name('media');
+Route::get('/media/create', 'App\Http\Controllers\MediaItemController@create')->name('media.create');
+Route::post('/media/store', 'App\Http\Controllers\MediaItemController@store')->name('store.post');
+Route::get('/media/{id}', 'App\Http\Controllers\MediaItemController@show')->name('media.show');

@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Changed the files/names so they fit my personal project">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Added a front-end HTML form in mediaCreate.blade.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MediaItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MediaItems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +207,7 @@
       <workItem from="1600070892200" duration="17069000" />
       <workItem from="1600182047720" duration="1399000" />
       <workItem from="1600189394192" duration="4103000" />
-      <workItem from="1600672484269" duration="24961000" />
+      <workItem from="1600672484269" duration="30201000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -298,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600714715817</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a front-end HTML form in mediaCreate.blade.php">
+      <created>1600802234896</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1600802234896</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +337,8 @@
     <MESSAGE value="Changed the name 'image' to 'media' since the database changed the name of it" />
     <MESSAGE value="Added a many-to-many table" />
     <MESSAGE value="Changed the files/names so they fit my personal project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the files/names so they fit my personal project" />
+    <MESSAGE value="Added a front-end HTML form in mediaCreate.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a front-end HTML form in mediaCreate.blade.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -339,10 +349,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="939" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600679830689" />
-    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600711960099">
+    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600871925583">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600711960099" />
+    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600871925583" />
     <state width="311" height="457" key="HiddenNamespacesPopup" timestamp="1600676058052">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -352,10 +362,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600073685661" />
-    <state x="496" y="275" key="Vcs.Push.Dialog.v2" timestamp="1600714722497">
+    <state x="496" y="275" key="Vcs.Push.Dialog.v2" timestamp="1600802242417">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="496" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1600714722497" />
+    <state x="496" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1600802242417" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -372,9 +382,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600183523713" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1600801582456">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1600871955997">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600801582456" />
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600871955997" />
   </component>
 </project>
