@@ -34,6 +34,21 @@
             line-height: 1.5
         }
 
+        input, textarea {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 12px;   /* if that’s what you want... */
+            line-height: 1.4;  /* somewhat excessive */
+            color: #333333;    /* if that’s what you want, but it reduces legibility */
+            background: #e2e8f0; /* always set background when you set color */
+        }
+
+        .imgPost{
+            max-height:800px;
+            max-width:800px;
+            height:auto;
+            width:auto;
+        }
+
         .links > a {
             color: #636b6f;
             padding: 0 25px;

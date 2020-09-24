@@ -36,46 +36,41 @@
 
             @if ($errors->any())
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <div class="ml-4 text-lg leading-7 font-semibold">
-                                    <a class="text-gray-900 dark:text-white">
-                                        <div class="alert alert-danger">
-                                            <ul>
-                                                @foreach ($errors->all() as $error)
-                                                    <li>{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    </a>
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <a class="text-gray-900 dark:text-white">
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             @endif
 
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-6">
-                        <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold">
-                                <a class="text-gray-900 dark:text-white">
-                                    <form method="post" action="{{route('store.post')}}">
-                                        @csrf
-                                        <label for="title">Title:</label><br>
-                                        <input type="text" id="title" name="title"
-                                               placeholder="title of the item"><br><br>
-                                        <label for="description">Description:</label><br>
-                                        <input type="text" id="description" name="description"
-                                               placeholder="description"><br><br>
-                                        <label for="media">Media:</label><br>
-                                        <input type="text" id="media" name="media" placeholder="link to media item"><br><br>
-                                        <input type="submit" value="Verzenden">
-                                    </form>
-                                </a>
-                            </div>
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="ml-4 text-lg leading-7 font-semibold">
+                            <a class="text-gray-900 dark:text-white">
+                                <form method="post" action="{{route('store.post')}}">
+                                    @csrf
+                                    <label for="title">Title:</label><br>
+                                    <input type="text" id="title" name="title" placeholder="title of the item"><br><br>
+
+                                    <label for="description">Description:</label><br>
+                                    <textarea id="description" name="description" placeholder="description" rows="6" cols="60"></textarea><br><br>
+
+                                    <label for="media">Media:</label><br>
+                                    <input type="text" id="media" name="media" placeholder="link to media item"><br><br>
+
+                                    <input type="submit" value="Verzenden">
+                                </form>
+                            </a>
                         </div>
                     </div>
                 </div>

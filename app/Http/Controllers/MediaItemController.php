@@ -39,9 +39,9 @@ class MediaItemController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
+            'title' => 'required|min:4',
             'description' => 'required',
-            'media' => 'required',
+            'media' => 'required|unique:media_items|active_url',
         ]);
 
         $mediaItem = new MediaItems();
