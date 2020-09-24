@@ -19,21 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Added a vector logo in the most ghetto way possible, but it works for now.">
-      <change afterPath="$PROJECT_DIR$/resources/lang/nl/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/nl/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/nl/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/nl/validation.php" afterDir="false" />
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/nl/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/nl/validation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +209,7 @@
       <workItem from="1600070892200" duration="17069000" />
       <workItem from="1600182047720" duration="1399000" />
       <workItem from="1600189394192" duration="4103000" />
-      <workItem from="1600672484269" duration="41402000" />
+      <workItem from="1600672484269" duration="42803000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -349,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600886928708</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home">
+      <created>1600940606105</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1600940606105</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +378,8 @@
     <MESSAGE value="Linked the submit form to the database and added error handling" />
     <MESSAGE value="Editing the SVG logo's" />
     <MESSAGE value="Added a vector logo in the most ghetto way possible, but it works for now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a vector logo in the most ghetto way possible, but it works for now." />
+    <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -407,10 +403,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="496" y="275" key="Vcs.Push.Dialog.v2" timestamp="1600886935891">
+    <state x="496" y="275" key="Vcs.Push.Dialog.v2" timestamp="1600940614174">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="496" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1600886935891" />
+    <state x="496" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1600940614174" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -427,10 +423,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="693" y="431" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600071738665" />
-    <state x="561" y="248" key="run.anything.popup" timestamp="1600183523713">
+    <state x="561" y="248" key="run.anything.popup" timestamp="1600951340922">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600183523713" />
+    <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600951340922" />
     <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1600936839916">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
