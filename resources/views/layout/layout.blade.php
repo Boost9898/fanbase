@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Fanbase</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -419,11 +419,19 @@
     </style>
 </head>
 <body class="antialiased">
+
+<x-app-layout>
+    <x-slot name="header">
+            {{ __('Dashboard') }}
+    </x-slot>
+
+
 <div class="links">
     <a href="{{route('home')}}">Home</a>
     <a href="{{route('media')}}">Media</a>
     <a href="{{route('media.create')}}">Media/create</a>
 </div>
 @yield('content')
+</x-app-layout>
 </body>
 </html>

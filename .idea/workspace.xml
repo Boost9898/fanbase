@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,10 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Installed Laravel Jetstream/Livewire">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="Additional migrations for Jetstream">
+      <change beforePath="$PROJECT_DIR$/.idea/fanbase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fanbase.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MediaItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MediaItems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +177,15 @@
       <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hUcN3udhjGpChE83iBbFg9jLiM" />
@@ -221,7 +241,7 @@
       <workItem from="1600070892200" duration="17069000" />
       <workItem from="1600182047720" duration="1399000" />
       <workItem from="1600189394192" duration="4103000" />
-      <workItem from="1600672484269" duration="47040000" />
+      <workItem from="1600672484269" duration="55256000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -370,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601024625862</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Additional migrations for Jetstream">
+      <created>1601026750304</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601026750304</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +434,8 @@
     <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
     <MESSAGE value="Added Dutch translations" />
     <MESSAGE value="Installed Laravel Jetstream/Livewire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed Laravel Jetstream/Livewire" />
+    <MESSAGE value="Additional migrations for Jetstream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional migrations for Jetstream" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -435,10 +463,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state width="254" height="200" key="ShowFilterAction_Filter_Popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601024114244" />
-    <state x="496" y="275" key="Vcs.Push.Dialog.v2" timestamp="1600962181362">
+    <state x="496" y="275" key="Vcs.Push.Dialog.v2" timestamp="1601026758773">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="496" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1600962181362" />
+    <state x="496" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1601026758773" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -459,9 +487,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600951340922" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1601024114767">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1601296507020">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601024114767" />
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601296507020" />
   </component>
 </project>
