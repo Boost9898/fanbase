@@ -37,7 +37,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                            <a href="{{route('home')}}">Home</a>
+                            <a href="{{route('media')}}">Media</a>
+                            <a href="{{route('media.create')}}">Media/create</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

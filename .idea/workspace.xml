@@ -27,20 +27,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- killed the left overs of jetstream oof">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- installed bootstrap.js&#10;- changed the defaul layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Jetstream/DeleteUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/mediaId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/two-factor-authentication-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-password-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -399,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601385545491</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="- installed bootstrap.js&#10;- changed the defaul layout">
+      <created>1601386492139</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601386492140</updated>
+    </task>
+    <task id="LOCAL-00023" summary="- installed bootstrap.js&#10;- changed the defaul layout">
+      <created>1601386500185</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601386500185</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +450,8 @@
     <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
     <MESSAGE value="- kind of stable version now" />
     <MESSAGE value="- killed the left overs of jetstream oof" />
-    <option name="LAST_COMMIT_MESSAGE" value="- killed the left overs of jetstream oof" />
+    <MESSAGE value="- installed bootstrap.js&#10;- changed the defaul layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="- installed bootstrap.js&#10;- changed the defaul layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -460,10 +475,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1601385552565">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1601386505635">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1601385552565" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1601386505635" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
