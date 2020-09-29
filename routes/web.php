@@ -22,7 +22,3 @@ Route::get('/media', 'App\Http\Controllers\MediaItemController@index')->name('me
 Route::get('/media/create', 'App\Http\Controllers\MediaItemController@create')->name('media.create');
 Route::post('/media/store', 'App\Http\Controllers\MediaItemController@store')->name('store.post');
 Route::get('/media/{id}', 'App\Http\Controllers\MediaItemController@show')->name('media.show');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');

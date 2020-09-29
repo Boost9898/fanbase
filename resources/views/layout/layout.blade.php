@@ -420,18 +420,12 @@
 </head>
 <body class="antialiased">
 
-<x-app-layout>
-    <x-slot name="header">
-            {{ __('Dashboard') }}
-    </x-slot>
-
-
 <div class="links">
     <a href="{{route('home')}}">Home</a>
     <a href="{{route('media')}}">Media</a>
     <a href="{{route('media.create')}}">Media/create</a>
 </div>
 @yield('content')
-</x-app-layout>
+
 </body>
 </html>
