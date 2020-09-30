@@ -45,7 +45,7 @@ class MediaItemController extends Controller
         ]);
 
         $mediaItem = new MediaItems();
-        $mediaItem->title = $request->get('title');
+        $mediaItem->title = ucfirst($request->get('title'));
         $mediaItem->description = $request->get('description');
         $mediaItem->media = $request->get('media');
 

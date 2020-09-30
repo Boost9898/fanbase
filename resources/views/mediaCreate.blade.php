@@ -1,62 +1,54 @@
 @extends('layouts.app')
 
 @section('content')
-    <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-            <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-6">
-                        <div class="flex items-center">
-                            <div class="ml-4 text-lg leading-7 font-semibold">
-                                <a class="text-gray-900 dark:text-white">Create</a>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Create</div>
+
+                    @if ($errors->any())
+                        <div class="alert alert-primary " role="alert">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Zeg makker, je vergeet iets:</li>
+                                @foreach ($errors->all() as $error)
+                                    <li class="list-group-item">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <div class="card-body">
+                        <form method="post" id="mediaCreate" action="{{route('store.post')}}">
+                            @csrf
+                            <div lass="form-group">
+                                <label for="title">Title:</label><br>
+                                <input type="text" class="form-control" id="title" name="title" placeholder="title of the item"><br><br>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            @if ($errors->any())
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="p-6">
-                        <div class="flex items-center">
-                            <a class="text-gray-900 dark:text-white">
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            @endif
+                            <div lass="form-group">
+                                <label for="description">Description:</label><br>
+                                <textarea class="form-control" id="description" name="description" placeholder="description" rows="6" cols="60"></textarea><br><br>
+                            </div>
 
-            <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                <div class="p-6">
-                    <div class="flex items-center">
-                        <div class="ml-4 text-lg leading-7 font-semibold">
-                            <a class="text-gray-900 dark:text-white">
-                                <form method="post" action="{{route('store.post')}}">
-                                    @csrf
-                                    <label for="title">Title:</label><br>
-                                    <input type="text" id="title" name="title" placeholder="title of the item"><br><br>
+                            <div lass="form-group">
+                                <label for="media">Media:</label><br>
+                                <input type="text" class="form-control" id="media" name="media"
+                                       placeholder="link to media item"><br><br>
+                            </div>
 
-                                    <label for="description">Description:</label><br>
-                                    <textarea id="description" name="description" placeholder="description" rows="6" cols="60"></textarea><br><br>
+                            <div lass="form-group">
+                                <label for="title">Category:</label><br>
+                                <select class="form-control" id="category" name="carlist" form="mediaCreate">
+                                    <option value="UIT DATABASE HALEN">UIT DATABASE HALEN</option>
+                                </select><br><br>
+                            </div>
 
-                                    <label for="media">Media:</label><br>
-                                    <input type="text" id="media" name="media" placeholder="link to media item"><br><br>
-
-                                    <input type="submit" value="Verzenden">
-                                </form>
-                            </a>
-                        </div>
+                            <input type="submit" class="btn btn-primary" value="Verzenden">
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 @endsection()
-
