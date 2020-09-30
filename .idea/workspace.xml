@@ -27,14 +27,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- added admin role&#10;- changed database table of users">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Restyled everything according to the bootstrap">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cbef6df-0b50-4519-94c4-40a29981b3de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cbef6df-0b50-4519-94c4-40a29981b3de.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MediaItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MediaItems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,6 +244,7 @@
       <workItem from="1600182047720" duration="1399000" />
       <workItem from="1600189394192" duration="4103000" />
       <workItem from="1600672484269" duration="42803000" />
+      <workItem from="1601478083364" duration="1861000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -421,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601468187892</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- Restyled everything according to the bootstrap">
+      <created>1601476244618</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1601476244618</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +468,8 @@
     <MESSAGE value="- installed bootstrap.js&#10;- changed the defaul layout" />
     <MESSAGE value="- cleaning up old code" />
     <MESSAGE value="- added admin role&#10;- changed database table of users" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added admin role&#10;- changed database table of users" />
+    <MESSAGE value="- Restyled everything according to the bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Restyled everything according to the bootstrap" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -485,18 +493,18 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1601387600265">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1601476263930">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1601387600265" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1601476263930" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1792.1025@0.23.1792.1025" timestamp="1600680585066" />
-    <state x="798" y="430" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601466995393">
+    <state x="798" y="430" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601490370745">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="798" y="430" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1792.1025@0.23.1792.1025" timestamp="1601466995393" />
+    <state x="798" y="430" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1792.1025@0.23.1792.1025" timestamp="1601490370745" />
     <state x="595" y="103" width="1395" height="1006" key="dock-window-1" timestamp="1600935457945">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -513,20 +521,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600951340922" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1601469323037">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1601490365192">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601469323037" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1601490365192" />
   </component>
 </project>

@@ -28,5 +28,4 @@ use Illuminate\Database\Eloquent\Model;
 class MediaItems extends Model
 {
     public $fillable = ['title', 'description', 'media'];
-//    use HasFactory;
 }
