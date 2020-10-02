@@ -45,7 +45,9 @@
                                     <div lass="form-group">
                                         <label for="title">Category:</label><br>
                                         <select class="form-control" id="category" name="carlist" form="mediaCreate">
-                                            <option value="UIT DATABASE HALEN">UIT DATABASE HALEN</option>
+                                            @foreach($categories as $category)
+                                                <option value="UIT DATABASE HALEN">{{$category->category}}</option>
+                                            @endforeach
                                         </select><br><br>
                                     </div>
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\MediaItems;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MediaItemController extends Controller
 {
@@ -14,8 +15,6 @@ class MediaItemController extends Controller
      */
     public function index()
     {
-//        WAAROM KENT HIJ DE 'ORDERBY' NIET?
-//        $items = MediaItems::orderBy('created_at', 'desc')->get();
         $items = MediaItems::all();
         return view('media', ['items' => $items]);
     }
@@ -27,7 +26,8 @@ class MediaItemController extends Controller
      */
     public function create()
     {
-        return view('mediaCreate');
+        $categories = DB::table('categories')->get();
+        return view('mediaCreate', ['categories' => $categories]);
     }
 
     /**
@@ -42,18 +42,19 @@ class MediaItemController extends Controller
             'title' => 'required|min:4',
             'description' => 'required',
             'media' => 'required|unique:media_items|active_url',
+            'category' => 'required',
         ]);
 
         $mediaItem = new MediaItems();
         $mediaItem->title = ucfirst($request->get('title'));
         $mediaItem->description = $request->get('description');
         $mediaItem->media = $request->get('media');
+        $mediaItem->title = $request->get('category');
 
         $mediaItem->save();
         return redirect('media')->with('success', 'Media item toegevoegd aan de database!');
 
     }
-
 
     /**
      * Display the specified resource.
