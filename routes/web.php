@@ -13,11 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/home', 'App\Http\Controllers\Home@show')->name('home');
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name('root');
+Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 Route::get('/media', 'App\Http\Controllers\MediaItemController@index')->name('media');
 Route::get('/media/create', 'App\Http\Controllers\MediaItemController@create')->name('media.create');
 Route::post('/media/store', 'App\Http\Controllers\MediaItemController@store')->name('store.post');

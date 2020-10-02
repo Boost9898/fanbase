@@ -34,7 +34,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{{route('home')}}">Fanbase</a>
+        <a class="navbar-brand" href="{{route('root')}}">Fanbase</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="{{route('home')}}">Home</a>
+                <a class="nav-item nav-link" href="{{route('root')}}">Home</a>
                 <a class="nav-item nav-link" href="{{route('media')}}">Media</a>
                 <a class="nav-item nav-link" href="{{route('media.create')}}">Media/create</a>
             </ul>
