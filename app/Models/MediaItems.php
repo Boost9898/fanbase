@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property int $id
  * @property string $title
+ * @property string $category
  * @property string $description
  * @property string $media
  * @property \Illuminate\Support\Carbon|null $created_at
@@ -27,5 +28,5 @@ use Illuminate\Database\Eloquent\Model;
  */
 class MediaItems extends Model
 {
-    public $fillable = ['title', 'description', 'media'];
+    public $fillable = ['title', 'category', 'description', 'media'];
 }

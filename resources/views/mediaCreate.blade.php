@@ -24,33 +24,32 @@
                             <div class="card-body">
                                 <form method="post" id="mediaCreate" action="{{route('store.post')}}">
                                     @csrf
-                                    <div lass="form-group">
+                                    <div class="form-group">
                                         <label for="title">Title:</label><br>
                                         <input type="text" class="form-control" id="title" name="title"
                                                placeholder="title of the item"><br><br>
                                     </div>
 
-                                    <div lass="form-group">
+                                    <div class="form-group">
                                         <label for="description">Description:</label><br>
                                         <textarea class="form-control" id="description" name="description"
                                                   placeholder="description" rows="6" cols="60"></textarea><br><br>
                                     </div>
 
-                                    <div lass="form-group">
+                                    <div class="form-group">
                                         <label for="media">Media:</label><br>
                                         <input type="text" class="form-control" id="media" name="media"
                                                placeholder="link to media item"><br><br>
                                     </div>
 
-                                    <div lass="form-group">
-                                        <label for="title">Category:</label><br>
-                                        <select class="form-control" id="category" name="carlist" form="mediaCreate">
+                                    <div class="form-group">
+                                        <label for="category">Category:</label><br>
+                                        <select class="form-control" id="category" name="category">
                                             @foreach($categories as $category)
-                                                <option value="UIT DATABASE HALEN">{{$category->category}}</option>
+                                                <option value="{{$category->category}}">{{$category->category}}</option>
                                             @endforeach
                                         </select><br><br>
                                     </div>
-
                                     <input type="submit" class="btn btn-primary" value="Verzenden">
                                 </form>
                             </div>

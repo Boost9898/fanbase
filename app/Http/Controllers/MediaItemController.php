@@ -42,18 +42,16 @@ class MediaItemController extends Controller
             'title' => 'required|min:4',
             'description' => 'required',
             'media' => 'required|unique:media_items|active_url',
-            'category' => 'required',
         ]);
 
         $mediaItem = new MediaItems();
         $mediaItem->title = ucfirst($request->get('title'));
+        $mediaItem->category = $request->get('category');
         $mediaItem->description = $request->get('description');
         $mediaItem->media = $request->get('media');
-        $mediaItem->title = $request->get('category');
 
         $mediaItem->save();
         return redirect('media')->with('success', 'Media item toegevoegd aan de database!');
-
     }
 
     /**
