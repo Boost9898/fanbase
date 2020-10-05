@@ -5,12 +5,17 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Admin</div>
+                    <div class="card-header">Admin beheer</div>
 
                     <div class="card-body">
                         <h1>Admin</h1>
-                        <p>[ ] Post uit db verwijderen</p>
-                        <table class="table table-hover">
+                        <p>[X] Post uit db verwijderen</p>
+                        <p>[ ] User uit db verwijderen</p>
+                        <p>[ ] Role user veranderen</p>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table table-hover w-100%">
                             <thead>
                             <tr>
                                 <th scope="col">ID</th>
@@ -33,14 +38,33 @@
                                 </tr>
                             @endforeach
                             </tbody>
+                        </table>
                     </div>
 
-                    <p>[ ] User uit db verwijderen</p>
-
-                    <p>[ ] Role user veranderen</p>
+                    <div class="card-body">
+                        <table class="table table-hover w-100%">
+                            <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Gebruiker</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($users as $user)
+                                <tr>
+                                    <td>{{$user['id']}}</td>
+                                    <td>{{$user['name']}}</td>
+                                    <td>{{$user['email']}}</td>
+                                    <td>{{$user['type']}}</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 @endsection

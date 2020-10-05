@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MediaItems;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -15,7 +16,8 @@ class AdminController extends Controller
     public function admin()
     {
         $items = MediaItems::all();
-        return view('admin', ['items' => $items]);
+        $users = User::all();
+        return view('admin', ['items' => $items], ['users' => $users]);
     }
 
     public function deletePost(request $request)

@@ -27,13 +27,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Added admin role">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Admin is able to delete posts from database/site">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MediaItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MediaItems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +242,7 @@
       <workItem from="1600189394192" duration="4103000" />
       <workItem from="1600672484269" duration="42803000" />
       <workItem from="1601478083364" duration="15943000" />
-      <workItem from="1601885104013" duration="5356000" />
+      <workItem from="1601885104013" duration="7908000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -471,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601887660820</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="- Admin is able to delete posts from database/site">
+      <created>1601892359545</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1601892359545</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +494,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a basic menu in the layout.blade.php" />
     <MESSAGE value="Added for each" />
     <MESSAGE value="Worked on routes based on lesson PRG05 3" />
     <MESSAGE value="- Changed the way of working with the news detail pages&#10;- Added home button in menu&#10;- Added /news/create placeholder" />
@@ -515,7 +518,8 @@
     <MESSAGE value="- Fetch categories from database and loop them into the submit category field" />
     <MESSAGE value="- Able to select and push the category to the database" />
     <MESSAGE value="- Added admin role" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added admin role" />
+    <MESSAGE value="- Admin is able to delete posts from database/site" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Admin is able to delete posts from database/site" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
