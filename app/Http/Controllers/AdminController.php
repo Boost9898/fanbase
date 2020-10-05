@@ -13,6 +13,6 @@ class AdminController extends Controller
 
     public function admin()
     {
-        return view('mediaCreate');
+        return view('admin');
     }
 }
