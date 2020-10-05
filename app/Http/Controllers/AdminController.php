@@ -17,14 +17,22 @@ class AdminController extends Controller
     {
         $items = MediaItems::all();
         $users = User::all();
-        return view('admin', ['items' => $items], ['users' => $users]);
+
+        return view('admin',
+            ['items' => $items],
+            ['users' => $users]);
     }
 
     public function deletePost(request $request)
     {
         $id = $request->get('id');
         MediaItems::where('id', '=', $id)->delete();
+
         $items = MediaItems::all();
-        return view('admin', ['items' => $items]);
+        $users = User::all();
+
+        return view('admin',
+            ['items' => $items],
+            ['users' => $users]);
     }
 }

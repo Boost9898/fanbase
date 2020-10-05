@@ -10,7 +10,7 @@
                     <div class="card-body">
                         <h1>Admin</h1>
                         <p>[X] Post uit db verwijderen</p>
-                        <p>[ ] User uit db verwijderen</p>
+                        <p>[ ] User soft deleten</p>
                         <p>[ ] Role user veranderen</p>
                     </div>
 
@@ -49,6 +49,7 @@
                                 <th scope="col">Gebruiker</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Type</th>
+                                <th scope="col">Status</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -58,6 +59,7 @@
                                     <td>{{$user['name']}}</td>
                                     <td>{{$user['email']}}</td>
                                     <td>{{$user['type']}}</td>
+                                    <td>{{$user['status']}}</td>
                                 </tr>
                             @endforeach
                             </tbody>

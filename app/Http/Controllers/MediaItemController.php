@@ -16,6 +16,7 @@ class MediaItemController extends Controller
     public function index()
     {
         $items = MediaItems::all();
+//        $users = Users::all();
         return view('media', ['items' => $items]);
     }
 
