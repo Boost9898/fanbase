@@ -19,6 +19,7 @@ class CreateMediaItemsTable extends Migration
             $table->string('category');
             $table->text('description');
             $table->char('media');
+            $table->string('status')->default('active');
             $table->timestamps();
         });
     }

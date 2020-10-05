@@ -20,7 +20,9 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Titel</th>
+                                <th scope="col">Categorie</th>
                                 <th scope="col">Status</th>
+                                <th scope="col">Actie</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -28,11 +30,13 @@
                                 <tr>
                                     <td>{{$item['id']}}</td>
                                     <td>{{$item['title']}}</td>
+                                    <td>{{$item['category']}}</td>
+                                    <td>{{$item['status']}}</td>
                                     <td>
                                         <form method="post" action="{{route('delete.post')}}">
                                             @csrf
                                             <input type="hidden" value="{{$item['id']}}" name="id" id="id">
-                                            <button type="submit">Lekker klikken</button>
+                                            <button type="submit" class="btn btn-primary">Verwijder</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -49,7 +53,6 @@
                                 <th scope="col">Gebruiker</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Type</th>
-                                <th scope="col">Status</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -59,7 +62,6 @@
                                     <td>{{$user['name']}}</td>
                                     <td>{{$user['email']}}</td>
                                     <td>{{$user['type']}}</td>
-                                    <td>{{$user['status']}}</td>
                                 </tr>
                             @endforeach
                             </tbody>
