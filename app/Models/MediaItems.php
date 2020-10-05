@@ -26,6 +26,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|MediaItems whereUpdatedAt($value)
  * @mixin \Eloquent
  */
+
 class MediaItems extends Model
 {
     public $fillable = ['title', 'category', 'description', 'media'];

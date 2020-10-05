@@ -6,12 +6,6 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Media item</div>
-                    @if($id > count($items))
-                        <div class="card-body">
-                        <h1>Deze pagina is pakot!</h1>
-                </div>
-                    @endif
-
                     <div class="card-body">
                         @foreach($items as $item)
                             @if($item['id']==$id)
