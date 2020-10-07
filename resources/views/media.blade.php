@@ -6,19 +6,24 @@
             <div class="col-md-8">
                 <div class="card">
 
-{{--                    <div class="card-header">Media items</div>--}}
-{{--                    <form class="form-inline mt-4" method="post" action="">--}}
-{{--                        <div class="form-group mx-sm-3 mb-2">--}}
-{{--                            <input type="text" class="form-control" id="search" placeholder="Zoeken">--}}
-{{--                        </div>--}}
-{{--                        <button type="submit" class="btn btn-primary mb-2">Zoek</button>--}}
-{{--                    </form>--}}
+                    {{--                    <div class="card-header">Media items</div>--}}
+                    {{--                    <form class="form-inline mt-4" method="post" action="">--}}
+                    {{--                        <div class="form-group mx-sm-3 mb-2">--}}
+                    {{--                            <input type="text" class="form-control" id="search" placeholder="Zoeken">--}}
+                    {{--                        </div>--}}
+                    {{--                        <button type="submit" class="btn btn-primary mb-2">Zoek</button>--}}
+                    {{--                    </form>--}}
 
-                    <form action="/search" method="POST" role="search">
+                    <form action="{{route('search')}}" method="POST" role="search">
                         @csrf
                         <div class="input-group mt-2 p-3">
-                            <input type="text" class="form-control" name="q" placeholder="Zoek een post">
-                                <button type="submit" class="btn btn-primary mb-2">Zoeken</button>
+                            <input type="text" class="form-control" name="searchName" placeholder="Zoek een post">
+                            <select>
+                                @foreach($categories as $category)
+                                    <option>{{$category['category']}}</option>
+                                @endforeach
+                            </select>
+                            <button type="submit" class="btn btn-primary mb-2">Zoeken</button>
                         </div>
                     </form>
 

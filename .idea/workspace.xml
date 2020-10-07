@@ -27,7 +27,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- worked on the toggle function, with no success today">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- added a Categories model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
@@ -244,7 +244,7 @@
       <workItem from="1600672484269" duration="42803000" />
       <workItem from="1601478083364" duration="15943000" />
       <workItem from="1601885104013" duration="13082000" />
-      <workItem from="1601992658379" duration="7229000" />
+      <workItem from="1601992658379" duration="8874000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -505,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602009226237</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="- added a Categories model">
+      <created>1602073812994</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1602073812994</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made a connection to local database" />
     <MESSAGE value="Changed the name 'image' to 'media' since the database changed the name of it" />
     <MESSAGE value="Added a many-to-many table" />
     <MESSAGE value="Changed the files/names so they fit my personal project" />
@@ -549,7 +555,8 @@
     <MESSAGE value="- Admin page only accesable as user" />
     <MESSAGE value="- Added CSS (align text horizontally in tables)" />
     <MESSAGE value="- worked on the toggle function, with no success today" />
-    <option name="LAST_COMMIT_MESSAGE" value="- worked on the toggle function, with no success today" />
+    <MESSAGE value="- added a Categories model" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added a Categories model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">

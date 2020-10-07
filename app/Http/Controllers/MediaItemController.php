@@ -70,6 +70,19 @@ class MediaItemController extends Controller
         return view('mediaId', ['id' => $id], ['items' => $items]);
     }
 
+    public function search(Request $request)
+    {
+        $categories = Categories::all();
+        $searchName = $request->get('searchName');
+        $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->get();
+
+        if (count($mediaItems) > 0) {
+            return view('media', ['categories' => $categories], ['items' => $mediaItems]);
+        } else {
+            return view('media')->withMessage('No Details found. Try to search again !');
+        }
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
