@@ -12,12 +12,14 @@
                         @csrf
                         <div class="input-group mt-2 p-3">
                             <input type="text" class="form-control" name="searchName" placeholder="Zoek een post">
-                            <select name="category">
+                            <select class="form-control" name="category">
                                 <option value="alles">Alles</option>
                                 @foreach($categories as $category)
+
                                     <option>{{$category['category']}}</option>
                                 @endforeach
                             </select>
+                            <div class="p-1"></div>
                             <button type="submit" class="btn btn-primary mb-2">Zoeken</button>
                         </div>
                     </form>
@@ -29,9 +31,12 @@
 
                     <div class="card-body">
                         @foreach($items as $item)
-                            <h4><a href="{{route('media')}}/{{$item['id']}}">{{$item['title']}}</a></h4>
-                            <p>{{$item['category']}}</p>
-                            <br>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h4><a href="{{route('media')}}/{{$item['id']}}">{{$item['title']}}</a></h4>
+                                    <p>{{$item['category']}}</p>
+                                </div>
+                            </div>
                         @endforeach
                     </div>
                 </div>

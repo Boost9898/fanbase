@@ -82,7 +82,6 @@ class MediaItemController extends Controller
             $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->where ('category', 'LIKE', '%' . $category . '%')->get();
         }
 
-
         if (count($mediaItems) > 0) {
             return view('media', ['categories' => $categories], ['items' => $mediaItems]);
         } else {
