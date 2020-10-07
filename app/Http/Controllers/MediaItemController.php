@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categories;
 use App\Models\MediaItems;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,7 +17,8 @@ class MediaItemController extends Controller
     public function index()
     {
         $items = MediaItems::all();
-        return view('media', ['items' => $items]);
+        $categories = Categories::all();
+        return view('media', ['items' => $items], ['categories' => $categories]);
     }
 
     /**
@@ -26,7 +28,7 @@ class MediaItemController extends Controller
      */
     public function create()
     {
-        $categories = DB::table('categories')->get();
+        $categories = Categories::all();
         return view('mediaCreate', ['categories' => $categories]);
     }
 
