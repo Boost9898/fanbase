@@ -27,11 +27,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- added a Categories model">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Users are able to filter on custom input, yeey">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,15 +212,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layout" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/lang" />
       <recent name="$PROJECT_DIR$/resources/views/layout" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/layout" />
-      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,7 +244,7 @@
       <workItem from="1600672484269" duration="42803000" />
       <workItem from="1601478083364" duration="15943000" />
       <workItem from="1601885104013" duration="13082000" />
-      <workItem from="1601992658379" duration="8874000" />
+      <workItem from="1601992658379" duration="11402000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -512,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602073812994</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="- Users are able to filter on custom input, yeey">
+      <created>1602075527119</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1602075527119</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +538,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed the name 'image' to 'media' since the database changed the name of it" />
     <MESSAGE value="Added a many-to-many table" />
     <MESSAGE value="Changed the files/names so they fit my personal project" />
     <MESSAGE value="Added a front-end HTML form in mediaCreate.blade.php" />
@@ -556,7 +562,8 @@
     <MESSAGE value="- Added CSS (align text horizontally in tables)" />
     <MESSAGE value="- worked on the toggle function, with no success today" />
     <MESSAGE value="- added a Categories model" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added a Categories model" />
+    <MESSAGE value="- Users are able to filter on custom input, yeey" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Users are able to filter on custom input, yeey" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">

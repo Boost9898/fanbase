@@ -74,12 +74,19 @@ class MediaItemController extends Controller
     {
         $categories = Categories::all();
         $searchName = $request->get('searchName');
-        $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->get();
+        $category = $request->get('category');
+
+        if ($category == 'alles') {
+            $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->get();
+        } else {
+            $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->where ('category', 'LIKE', '%' . $category . '%')->get();
+        }
+
 
         if (count($mediaItems) > 0) {
             return view('media', ['categories' => $categories], ['items' => $mediaItems]);
         } else {
-            return view('media')->withMessage('No Details found. Try to search again !');
+            return view('media', ['categories' => $categories], ['items' => $mediaItems])->withMessage('No Details found. Try to search again !');
         }
     }
 

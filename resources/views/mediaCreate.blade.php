@@ -45,6 +45,7 @@
                                     <div class="form-group">
                                         <label for="category">Category:</label><br>
                                         <select class="form-control" id="category" name="category">
+{{--                                            <option value="alles" disabled>Alles</option>--}}
                                             @foreach($categories as $category)
                                                 <option value="{{$category->category}}">{{$category->category}}</option>
                                             @endforeach
