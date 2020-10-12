@@ -9,9 +9,6 @@
 
                     <div class="card-body">
                         <h1>Admin</h1>
-                        <p>[X] Post uit db verwijderen</p>
-                        <p>[ ] User soft deleten</p>
-                        <p>[ ] Role user veranderen</p>
                     </div>
 
                     <div class="card-body">

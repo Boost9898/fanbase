@@ -31,12 +31,15 @@
 
                     <div class="card-body">
                         @foreach($items as $item)
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h4><a href="{{route('media')}}/{{$item['id']}}">{{$item['title']}}</a></h4>
-                                    <p>{{$item['category']}}</p>
+                            @if($item['status'] == 'active')
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h4><a href="{{route('media')}}/{{$item['id']}}">{{$item['title']}}</a></h4>
+                                        <p>{{$item['category']}}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            @else
+                            @endif
                         @endforeach
                     </div>
                 </div>
