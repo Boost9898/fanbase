@@ -31,12 +31,25 @@
                                     <td>{{$item['id']}}</td>
                                     <td>{{$item['title']}}</td>
                                     <td>{{$item['category']}}</td>
-                                    <td>{{$item['status']}}</td>
+                                    <td>
+                                        <form method="post" action="{{route('status.post')}}">
+                                            @csrf
+                                            <input type="hidden" value="{{$item['id']}}" name="id" id="id">
+                                            @if($item['status'] == 'active')
+                                            <input type="hidden" value="{{$item['status']}}" name="status" id="status">
+                                            <button type="submit" class="btn btn-primary">Active</button>
+
+                                            @else
+                                            <input type="hidden" value="{{$item['status']}}" name="status" id="status">
+                                            <button type="submit" class="btn btn-secondary">Inactive</button>
+                                            @endif
+                                        </form>
+                                    </td>
                                     <td>
                                         <form method="post" action="{{route('delete.post')}}">
                                             @csrf
                                             <input type="hidden" value="{{$item['id']}}" name="id" id="id">
-                                            <button type="submit" class="btn btn-primary">Verwijder</button>
+                                            <button type="submit" class="btn btn-danger">Verwijder</button>
                                         </form>
                                     </td>
                                 </tr>

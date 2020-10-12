@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\MediaItems;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -87,6 +88,27 @@ class MediaItemController extends Controller
         } else {
             return view('media', ['categories' => $categories], ['items' => $mediaItems])->withMessage('No Details found. Try to search again !');
         }
+    }
+
+    public function status(Request $request)
+    {
+        $items = MediaItems::all();
+        $users = User::all();
+
+        $status = $request->get('status');
+        $id = $request->get('id');
+
+        if ($status == 'active') {
+            MediaItems::where('id', '=', $id)
+                ->update(['status' => 'inactive']);
+        } elseif ($status == 'inactive') {
+            MediaItems::where('id', '=', $id)
+                ->update(['status' => 'active']);
+        }
+
+        return view('admin',
+            ['items' => $items],
+            ['users' => $users]);
     }
 
     /**
