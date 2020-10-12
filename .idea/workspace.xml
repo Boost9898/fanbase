@@ -27,11 +27,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Made active/inactive switch in admin.blade.php">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +245,8 @@
       <workItem from="1601992658379" duration="11495000" />
       <workItem from="1602079471681" duration="2041000" />
       <workItem from="1602146241874" duration="44000" />
-      <workItem from="1602487670562" duration="6884000" />
+      <workItem from="1602487670562" duration="7021000" />
+      <workItem from="1602505022379" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -550,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602497717521</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching">
+      <created>1602501194958</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1602501194958</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Linked the submit form to the database and added error handling" />
     <MESSAGE value="Editing the SVG logo's" />
     <MESSAGE value="Added a vector logo in the most ghetto way possible, but it works for now." />
     <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
@@ -594,7 +599,8 @@
     <MESSAGE value="- Able to search through categories&#10;- Able to search with custom input&#10;- Able to combine the two above" />
     <MESSAGE value="- Front-end media.blade.php" />
     <MESSAGE value="- Made active/inactive switch in admin.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Made active/inactive switch in admin.blade.php" />
+    <MESSAGE value="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">

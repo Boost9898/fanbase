@@ -92,9 +92,6 @@ class MediaItemController extends Controller
 
     public function status(Request $request)
     {
-        $items = MediaItems::all();
-        $users = User::all();
-
         $status = $request->get('status');
         $id = $request->get('id');
 
@@ -106,9 +103,14 @@ class MediaItemController extends Controller
                 ->update(['status' => 'active']);
         }
 
-        return view('admin',
-            ['items' => $items],
-            ['users' => $users]);
+        return redirect('admin');
+
+//                $items = MediaItems::all();
+//        $users = User::all();
+//
+//        return view('admin',
+//            ['items' => $items],
+//            ['users' => $users]);
     }
 
     /**
