@@ -52,7 +52,7 @@
             <ul class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{route('root')}}">Home</a>
                 <a class="nav-item nav-link" href="{{route('media')}}">Media</a>
-                <a class="nav-item nav-link" href="{{route('media.create')}}">Media/create</a>
+                <a class="nav-item nav-link" href="{{route('media.create')}}">Create</a>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">

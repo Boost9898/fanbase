@@ -27,9 +27,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +246,8 @@
       <workItem from="1602079471681" duration="2041000" />
       <workItem from="1602146241874" duration="44000" />
       <workItem from="1602487670562" duration="7021000" />
-      <workItem from="1602505022379" duration="342000" />
+      <workItem from="1602505022379" duration="508000" />
+      <workItem from="1602506547476" duration="420000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -556,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602501194958</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');">
+      <created>1602505612049</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1602505612049</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +583,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Editing the SVG logo's" />
     <MESSAGE value="Added a vector logo in the most ghetto way possible, but it works for now." />
     <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
     <MESSAGE value="- kind of stable version now" />
@@ -600,7 +607,8 @@
     <MESSAGE value="- Front-end media.blade.php" />
     <MESSAGE value="- Made active/inactive switch in admin.blade.php" />
     <MESSAGE value="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching" />
+    <MESSAGE value="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -628,10 +636,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602085958247">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602505618101">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602085958247" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602505618101" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
