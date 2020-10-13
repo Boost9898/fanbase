@@ -20,8 +20,9 @@ Route::get('/media/create', 'App\Http\Controllers\MediaItemController@create')->
 Route::post('/media/store', 'App\Http\Controllers\MediaItemController@store')->name('store.post');
 Route::get('/media/{id}', 'App\Http\Controllers\MediaItemController@show')->name('media.show');
 Route::post('/admin/status', 'App\Http\Controllers\MediaItemController@status')->name('status.post');
-
 Route::post('/search', 'App\Http\Controllers\MediaItemController@search')->name('search');
+
+Route::get('/overview', 'App\Http\Controllers\UserController@index')->name('overview');
 
 Route::post('/admin', 'App\Http\Controllers\AdminController@deletePost')->name('delete.post');
 Route::get('/admin', 'App\Http\Controllers\AdminController@admin')

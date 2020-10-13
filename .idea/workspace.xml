@@ -27,9 +27,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Changed header names">
+      <change afterPath="$PROJECT_DIR$/resources/views/overview.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +201,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -210,15 +213,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/layout" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/lang" />
       <recent name="$PROJECT_DIR$/resources/views/layout" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layout" />
+      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -247,7 +251,8 @@
       <workItem from="1602146241874" duration="44000" />
       <workItem from="1602487670562" duration="7021000" />
       <workItem from="1602505022379" duration="508000" />
-      <workItem from="1602506547476" duration="420000" />
+      <workItem from="1602506547476" duration="503000" />
+      <workItem from="1602590329442" duration="6538000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -564,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602505612049</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="- Changed header names">
+      <created>1602507281186</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1602507281186</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +595,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a vector logo in the most ghetto way possible, but it works for now." />
     <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
     <MESSAGE value="- kind of stable version now" />
     <MESSAGE value="- killed the left overs of jetstream oof" />
@@ -608,7 +619,8 @@
     <MESSAGE value="- Made active/inactive switch in admin.blade.php" />
     <MESSAGE value="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching" />
     <MESSAGE value="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');" />
+    <MESSAGE value="- Changed header names" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Changed header names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -623,10 +635,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1602496584714" />
-    <state x="634" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602497535172">
+    <state x="634" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602593148509">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="634" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1602497535172" />
+    <state x="634" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1602593148509" />
     <state width="311" height="457" key="HiddenNamespacesPopup" timestamp="1600676058052">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -636,10 +648,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602505618101">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602507285771">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602505618101" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602507285771" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -664,9 +676,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600951340922" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602497732473">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602593028601">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1602497732473" />
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1602593028601" />
   </component>
 </project>

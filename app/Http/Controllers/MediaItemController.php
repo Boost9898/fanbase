@@ -105,7 +105,7 @@ class MediaItemController extends Controller
 
         return redirect('admin');
 
-//                $items = MediaItems::all();
+//        $items = MediaItems::all();
 //        $users = User::all();
 //
 //        return view('admin',
