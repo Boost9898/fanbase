@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('root');
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+
 Route::get('/media', 'App\Http\Controllers\MediaItemController@index')->name('media');
 Route::get('/media/create', 'App\Http\Controllers\MediaItemController@create')->name('media.create');
 Route::post('/media/store', 'App\Http\Controllers\MediaItemController@store')->name('store.post');
+Route::post('/media/like', 'App\Http\Controllers\MediaItemController@like')->name('media.like');
 Route::get('/media/{id}', 'App\Http\Controllers\MediaItemController@show')->name('media.show');
 Route::post('/admin/status', 'App\Http\Controllers\MediaItemController@status')->name('status.post');
 Route::post('/search', 'App\Http\Controllers\MediaItemController@search')->name('search');

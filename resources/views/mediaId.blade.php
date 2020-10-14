@@ -16,6 +16,20 @@
                             @endif
                         @endforeach
                     </div>
+
+                    <div class="card-body">
+                        <form method="post" id="like" action="{{route('media.like')}}">
+                            @csrf
+                            <input type="hidden" value="{{$id}}" name="id" id="id">
+                            <input type="hidden" value="" name="like" id="like">
+                            @foreach($items as $item)
+                                @if($item['id']==$id)
+                                    <button type="submit" class="btn btn-primary">💿 Likes: {{$item['like']}}
+                                @endif
+                            @endforeach
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

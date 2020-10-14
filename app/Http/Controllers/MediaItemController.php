@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\MediaItems;
+use App\Models\UserLike;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -56,6 +57,22 @@ class MediaItemController extends Controller
 
         $mediaItem->save();
         return redirect('media')->with('success', 'Media item toegevoegd aan de database!');
+    }
+
+    public function like(Request $request)
+    {
+        $id = $request->get('id');
+
+        $currentMedia = MediaItems::where('id', 'LIKE', $id)->get();
+        $currentLikes = $currentMedia[0]['like'];
+        $currentLikes = $currentLikes + 1;
+
+        $currentUser = \Auth::id();
+        UserLike::where('id', 'LIKE', $id)->update(['like' => $currentLikes]);
+
+        MediaItems::where('id', 'LIKE', $id)->update(['like' => $currentLikes]);
+
+        return redirect('media/'.$id);
     }
 
     /**
