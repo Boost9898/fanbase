@@ -28,9 +28,9 @@ class UserController extends Controller
     {
         $currentUser = \Auth::id();
 
-        $items = MediaItems::where('id', 'LIKE', '%' . $currentUser . '%')->get();
+        $items = MediaItems::where('author', 'LIKE', $currentUser)->get();
 
-        $users = User::where('id', 'LIKE', '%' . $currentUser . '%')->get();
+        $users = User::where('id', 'LIKE', $currentUser)->get();
 
         return view('overview',
             ['items' => $items],

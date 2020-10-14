@@ -27,12 +27,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Working on personal page for default users">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Changed migration/database structure of create_media_items&#10;- Every posts knows which users ID created it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MediaItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MediaItems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_21_103923_create_media_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_21_103923_create_media_items_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +250,7 @@
       <workItem from="1602505022379" duration="508000" />
       <workItem from="1602506547476" duration="503000" />
       <workItem from="1602590329442" duration="6660000" />
-      <workItem from="1602669945255" duration="1875000" />
+      <workItem from="1602669945255" duration="2181000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -584,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602598407375</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="- Changed migration/database structure of create_media_items&#10;- Every posts knows which users ID created it">
+      <created>1602674602954</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1602674602954</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +607,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- kind of stable version now" />
     <MESSAGE value="- killed the left overs of jetstream oof" />
     <MESSAGE value="- installed bootstrap.js&#10;- changed the defaul layout" />
     <MESSAGE value="- cleaning up old code" />
@@ -628,7 +631,8 @@
     <MESSAGE value="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');" />
     <MESSAGE value="- Changed header names" />
     <MESSAGE value="- Working on personal page for default users" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Working on personal page for default users" />
+    <MESSAGE value="- Changed migration/database structure of create_media_items&#10;- Every posts knows which users ID created it" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Changed migration/database structure of create_media_items&#10;- Every posts knows which users ID created it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
