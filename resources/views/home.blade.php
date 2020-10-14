@@ -13,8 +13,15 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                        {{ __('Je bent ingelogd') }}
 
-                        {{ __('You are logged in!') }}
+                        {{--Dit is een placeholders waar errors komen--}}
+                        @if($errors->any())
+                            <div>
+                                <br>
+                                <p class="alert alert-danger">{{$errors->first()}}</p>
+                            </div>
+                        @endif
 
                         <img src="https://cutewallpaper.org/21/toto-band-logo/Toto-Logo-LogoDix.png">
                     </div>

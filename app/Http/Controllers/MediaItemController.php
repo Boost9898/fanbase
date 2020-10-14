@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\MediaItems;
-use App\Models\UserLike;
+use App\Models\UserLikes;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class MediaItemController extends Controller
 {
@@ -62,17 +63,40 @@ class MediaItemController extends Controller
     public function like(Request $request)
     {
         $id = $request->get('id');
-
+        $user_id = \Auth::id();
         $currentMedia = MediaItems::where('id', 'LIKE', $id)->get();
-        $currentLikes = $currentMedia[0]['like'];
-        $currentLikes = $currentLikes + 1;
 
-        $currentUser = \Auth::id();
-        UserLike::where('id', 'LIKE', $id)->update(['like' => $currentLikes]);
+        /**
+         * Checken of een combinatie van een user_id die een media_id al gelikt heeft al bestaat
+         * Indien die bestaat terugkoppelen
+         * Bestaat niet -> laten liken
+         */
+        $test = UserLikes::where('user_id', 'LIKE', $user_id)->where('media_id', 'LIKE', $id)->get();
 
-        MediaItems::where('id', 'LIKE', $id)->update(['like' => $currentLikes]);
+        if ($test === null) {
+            return Redirect::home()->withErrors(['True']);
+        } else {
+            return Redirect::home()->withErrors(['False']);
+        }
 
-        return redirect('media/'.$id);
+//        DEZE STATEMENT IS EEN PLACEHOLDER
+        if (1 + 1 == 2) {
+            return Redirect::home()->withErrors(['Je hebt al gestemd op dit media item!']);
+
+        } else {
+            $currentLikes = $currentMedia[0]['like'];
+            $currentLikes = $currentLikes + 1;
+
+            MediaItems::where('id', 'LIKE', $id)->update(['like' => $currentLikes]);
+
+            $userLikes = new UserLikes();
+            $userLikes->user_id = \Auth::id();
+            $userLikes->media_id = $id;
+            $userLikes->save();
+        }
+
+
+        return redirect('media/' . $id);
     }
 
     /**
@@ -98,7 +122,7 @@ class MediaItemController extends Controller
         if ($category == 'alles') {
             $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->get();
         } else {
-            $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->where ('category', 'LIKE', '%' . $category . '%')->get();
+            $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->where('category', 'LIKE', '%' . $category . '%')->get();
         }
 
         if (count($mediaItems) > 0) {

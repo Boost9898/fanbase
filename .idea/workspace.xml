@@ -27,12 +27,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Users can see their own posts in the dashboard">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cbef6df-0b50-4519-94c4-40a29981b3de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cbef6df-0b50-4519-94c4-40a29981b3de.xml" afterDir="false" />
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Users can like posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/UserLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserLikes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_14_120033_create_user_like_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_120033_create_user_likes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +253,7 @@
       <workItem from="1602505022379" duration="508000" />
       <workItem from="1602506547476" duration="503000" />
       <workItem from="1602590329442" duration="6660000" />
-      <workItem from="1602669945255" duration="6963000" />
-    </task>
-    <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
-      <created>1600071711305</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1600071711305</updated>
+      <workItem from="1602669945255" duration="11643000" />
     </task>
     <task id="LOCAL-00002" summary="Added layout.blade.php with (end)sections to have a cleaner/more efficient file structure">
       <created>1600076417204</created>
@@ -598,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602674822664</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="- Users can like posts">
+      <created>1602680110938</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1602680110939</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- installed bootstrap.js&#10;- changed the defaul layout" />
     <MESSAGE value="- cleaning up old code" />
     <MESSAGE value="- added admin role&#10;- changed database table of users" />
     <MESSAGE value="- Restyled everything according to the bootstrap" />
@@ -642,7 +641,8 @@
     <MESSAGE value="- Working on personal page for default users" />
     <MESSAGE value="- Changed migration/database structure of create_media_items&#10;- Every posts knows which users ID created it" />
     <MESSAGE value="- Users can see their own posts in the dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Users can see their own posts in the dashboard" />
+    <MESSAGE value="- Users can like posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Users can like posts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -653,10 +653,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="939" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1600679830689" />
-    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602496584714">
+    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602680675969">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1602496584714" />
+    <state x="601" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1602680675969" />
     <state x="634" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602593148509">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>

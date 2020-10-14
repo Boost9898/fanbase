@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * App\Models\MediaItems
  *
- * @property integer $userId
- * @property integer $mediaId
+ * @property integer $user_id
+ * @property integer $media_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
 // * @method static \Illuminate\Database\Eloquent\Builder|MediaItems newModelQuery()
@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  * @mixin \Eloquent
  */
 
-class UserLike extends Model
+class UserLikes extends Model
 {
     public $fillable = ['user_id', 'media_id'];
 }
