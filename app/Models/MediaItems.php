@@ -9,10 +9,12 @@ use Illuminate\Database\Eloquent\Model;
  * App\Models\MediaItems
  *
  * @property int $id
+ * @property string $author
  * @property string $title
  * @property string $category
  * @property string $description
  * @property string $media
+ * @property integer $like
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|MediaItems newModelQuery()
@@ -29,5 +31,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class MediaItems extends Model
 {
-    public $fillable = ['title', 'category', 'description', 'media'];
+    public $fillable = ['author', 'title', 'category', 'description', 'media', 'like'];
 }

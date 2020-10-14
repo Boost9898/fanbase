@@ -26,12 +26,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        $currentUser = \Auth::user()->email;
+        $currentUser = \Auth::id();
 
-        //HIER MOET IK NOG NAAR KIJKEN, HOE IK POSTS VAN EEN BEPAALDE USER OPHAAL
-        $items = MediaItems::where('category', 'LIKE', '%' . $currentUser . '%')->get();
+        $items = MediaItems::where('id', 'LIKE', '%' . $currentUser . '%')->get();
 
-        $users = User::where('email', 'LIKE', '%' . $currentUser . '%')->get();
+        $users = User::where('id', 'LIKE', '%' . $currentUser . '%')->get();
 
         return view('overview',
             ['items' => $items],

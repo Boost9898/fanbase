@@ -48,6 +48,7 @@ class MediaItemController extends Controller
         ]);
 
         $mediaItem = new MediaItems();
+        $mediaItem->author = \Auth::id();
         $mediaItem->title = ucfirst($request->get('title'));
         $mediaItem->category = $request->get('category');
         $mediaItem->description = $request->get('description');

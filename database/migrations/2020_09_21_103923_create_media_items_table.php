@@ -15,11 +15,14 @@ class CreateMediaItemsTable extends Migration
     {
         Schema::create('media_items', function (Blueprint $table) {
             $table->id();
+            $table->integer('author');
             $table->string('title');
             $table->string('category');
             $table->text('description');
             $table->char('media');
+            $table->integer('like');
             $table->string('status')->default('active');
+            $table->string('user');
             $table->timestamps();
         });
     }

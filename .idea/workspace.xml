@@ -27,12 +27,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Changed header names">
-      <change afterPath="$PROJECT_DIR$/resources/views/overview.blade.php" afterDir="false" />
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Working on personal page for default users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MediaItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MediaItems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_21_103923_create_media_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_21_103923_create_media_items_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +252,8 @@
       <workItem from="1602487670562" duration="7021000" />
       <workItem from="1602505022379" duration="508000" />
       <workItem from="1602506547476" duration="503000" />
-      <workItem from="1602590329442" duration="6538000" />
+      <workItem from="1602590329442" duration="6660000" />
+      <workItem from="1602669945255" duration="1875000" />
     </task>
     <task id="LOCAL-00001" summary="Start fanbase project, lesson 1 PRG05">
       <created>1600071711305</created>
@@ -576,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602507281186</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="- Working on personal page for default users">
+      <created>1602598407375</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1602598407375</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +603,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Worked on front-end of the media item submit/create page&#10;- Added validation the the mediaCreate.blade.php &#10;- Added a few Dutch translations in lang/nl pagination.php &#10;- Renamed welcome to home" />
     <MESSAGE value="- kind of stable version now" />
     <MESSAGE value="- killed the left overs of jetstream oof" />
     <MESSAGE value="- installed bootstrap.js&#10;- changed the defaul layout" />
@@ -620,7 +627,8 @@
     <MESSAGE value="- Check if item is (in)active&#10;- Possible to switch activity status via switch&#10;Bug: refresh when switching" />
     <MESSAGE value="- Fixed the 'refresh bug', problem was in the order of code&#10;- Replaced double code with a return redirect('admin');" />
     <MESSAGE value="- Changed header names" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Changed header names" />
+    <MESSAGE value="- Working on personal page for default users" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Working on personal page for default users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -648,10 +656,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602507285771">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602598413030">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602507285771" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602598413030" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
