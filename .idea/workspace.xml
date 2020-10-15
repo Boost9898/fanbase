@@ -27,12 +27,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Users can like posts">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Worked on deeper validation in MediaItemController.php @like">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/UserLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserLikes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_14_120033_create_user_like_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_120033_create_user_likes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +251,7 @@
       <workItem from="1602505022379" duration="508000" />
       <workItem from="1602506547476" duration="503000" />
       <workItem from="1602590329442" duration="6660000" />
-      <workItem from="1602669945255" duration="11643000" />
-    </task>
-    <task id="LOCAL-00002" summary="Added layout.blade.php with (end)sections to have a cleaner/more efficient file structure">
-      <created>1600076417204</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1600076417204</updated>
+      <workItem from="1602669945255" duration="13489000" />
     </task>
     <task id="LOCAL-00003" summary="Added a basic menu in the layout.blade.php">
       <created>1600078227806</created>
@@ -598,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602680110939</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="- Worked on deeper validation in MediaItemController.php @like">
+      <created>1602690053536</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1602690053537</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +615,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- cleaning up old code" />
     <MESSAGE value="- added admin role&#10;- changed database table of users" />
     <MESSAGE value="- Restyled everything according to the bootstrap" />
     <MESSAGE value="- Little tweakes" />
@@ -642,7 +639,8 @@
     <MESSAGE value="- Changed migration/database structure of create_media_items&#10;- Every posts knows which users ID created it" />
     <MESSAGE value="- Users can see their own posts in the dashboard" />
     <MESSAGE value="- Users can like posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Users can like posts" />
+    <MESSAGE value="- Worked on deeper validation in MediaItemController.php @like" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Worked on deeper validation in MediaItemController.php @like" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -670,10 +668,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602598413030">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602690062466">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602598413030" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602690062466" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>

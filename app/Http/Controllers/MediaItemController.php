@@ -66,21 +66,9 @@ class MediaItemController extends Controller
         $user_id = \Auth::id();
         $currentMedia = MediaItems::where('id', 'LIKE', $id)->get();
 
-        /**
-         * Checken of een combinatie van een user_id die een media_id al gelikt heeft al bestaat
-         * Indien die bestaat terugkoppelen
-         * Bestaat niet -> laten liken
-         */
-        $test = UserLikes::where('user_id', 'LIKE', $user_id)->where('media_id', 'LIKE', $id)->get();
+        $count = count(UserLikes::where('user_id', 'LIKE', $user_id)->where('media_id', 'LIKE', $id)->get());
 
-        if ($test === null) {
-            return Redirect::home()->withErrors(['True']);
-        } else {
-            return Redirect::home()->withErrors(['False']);
-        }
-
-//        DEZE STATEMENT IS EEN PLACEHOLDER
-        if (1 + 1 == 2) {
+        if ($count >= 1) {
             return Redirect::home()->withErrors(['Je hebt al gestemd op dit media item!']);
 
         } else {
@@ -94,7 +82,6 @@ class MediaItemController extends Controller
             $userLikes->media_id = $id;
             $userLikes->save();
         }
-
 
         return redirect('media/' . $id);
     }
