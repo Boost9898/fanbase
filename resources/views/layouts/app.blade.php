@@ -52,7 +52,8 @@
             <ul class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{route('root')}}">Home</a>
                 <a class="nav-item nav-link" href="{{route('media')}}">Media</a>
-                @if(2 == 1 + 1) // DIEPERE VALIDATIE OPZETTEN (als een gebruiker meer dan 3 entries heeft in user_like_table, dan true)
+{{--            DIEPERE VALIDATIE OPZETTEN (als een gebruiker meer dan 3 entries heeft in user_like_table, dan true)--}}
+                @if(2 == 1 + 1)
                     <a class="nav-item nav-link" href="{{route('media.create')}}">Create</a>
                 @endif
             </ul>

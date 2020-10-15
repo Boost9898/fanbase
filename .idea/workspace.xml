@@ -27,9 +27,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Worked on deeper validation in MediaItemController.php @like">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Users can now only vote once on a media item&#10;- Prepared if else statement in app.blade.php (#55), check if user has &gt;= entries in user_like_table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -251,14 +250,8 @@
       <workItem from="1602505022379" duration="508000" />
       <workItem from="1602506547476" duration="503000" />
       <workItem from="1602590329442" duration="6660000" />
-      <workItem from="1602669945255" duration="13489000" />
-    </task>
-    <task id="LOCAL-00003" summary="Added a basic menu in the layout.blade.php">
-      <created>1600078227806</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1600078227806</updated>
+      <workItem from="1602669945255" duration="13570000" />
+      <workItem from="1602771977062" duration="21000" />
     </task>
     <task id="LOCAL-00004" summary="Added for each">
       <created>1600085858141</created>
@@ -596,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602690053537</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="- Users can now only vote once on a media item&#10;- Prepared if else statement in app.blade.php (#55), check if user has &gt;= entries in user_like_table">
+      <created>1602771934321</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1602771934321</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +615,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- added admin role&#10;- changed database table of users" />
     <MESSAGE value="- Restyled everything according to the bootstrap" />
     <MESSAGE value="- Little tweakes" />
     <MESSAGE value="- Make media submit form only accesable for users&#10;- Removed duplicate controller&#10;- Simplified the /home url to the / root" />
@@ -640,7 +639,8 @@
     <MESSAGE value="- Users can see their own posts in the dashboard" />
     <MESSAGE value="- Users can like posts" />
     <MESSAGE value="- Worked on deeper validation in MediaItemController.php @like" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Worked on deeper validation in MediaItemController.php @like" />
+    <MESSAGE value="- Users can now only vote once on a media item&#10;- Prepared if else statement in app.blade.php (#55), check if user has &gt;= entries in user_like_table" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Users can now only vote once on a media item&#10;- Prepared if else statement in app.blade.php (#55), check if user has &gt;= entries in user_like_table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -668,10 +668,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602690062466">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602771940942">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602690062466" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602771940942" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -696,9 +696,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600951340922" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602678225270">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602771986138">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1602678225270" />
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1602771986138" />
   </component>
 </project>
