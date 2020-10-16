@@ -27,11 +27,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Working on deep validation&#10;- Used AppServiceProvider.php to pass variable through to app.blade.php so every extended page can access it!">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Working on deep validation&#10;- mediaId.blade.php now displays by default '0' if there are no likes yet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaId.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaId.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,14 +252,7 @@
       <workItem from="1602590329442" duration="6660000" />
       <workItem from="1602669945255" duration="13570000" />
       <workItem from="1602771977062" duration="104000" />
-      <workItem from="1602834821552" duration="3266000" />
-    </task>
-    <task id="LOCAL-00006" summary="- Changed the way of working with the news detail pages&#10;- Added home button in menu&#10;- Added /news/create placeholder">
-      <created>1600193969568</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1600193969568</updated>
+      <workItem from="1602834821552" duration="3716000" />
     </task>
     <task id="LOCAL-00007" summary="- Cleaned up files that weren't used">
       <created>1600194703258</created>
@@ -599,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602838536533</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="- Working on deep validation&#10;- mediaId.blade.php now displays by default '0' if there are no likes yet">
+      <created>1602839984223</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1602839984223</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +616,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Little tweakes" />
     <MESSAGE value="- Make media submit form only accesable for users&#10;- Removed duplicate controller&#10;- Simplified the /home url to the / root" />
     <MESSAGE value="- Fetch categories from database and loop them into the submit category field" />
     <MESSAGE value="- Able to select and push the category to the database" />
@@ -643,7 +640,8 @@
     <MESSAGE value="- Worked on deeper validation in MediaItemController.php @like" />
     <MESSAGE value="- Users can now only vote once on a media item&#10;- Prepared if else statement in app.blade.php (#55), check if user has &gt;= entries in user_like_table" />
     <MESSAGE value="- Working on deep validation&#10;- Used AppServiceProvider.php to pass variable through to app.blade.php so every extended page can access it!" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Working on deep validation&#10;- Used AppServiceProvider.php to pass variable through to app.blade.php so every extended page can access it!" />
+    <MESSAGE value="- Working on deep validation&#10;- mediaId.blade.php now displays by default '0' if there are no likes yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Working on deep validation&#10;- mediaId.blade.php now displays by default '0' if there are no likes yet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">

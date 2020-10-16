@@ -24,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $user_id = \Auth::id();
+//      RIP DIT WERKT NIET OMDAT DEZE CONTROLLER EERDER WORDT AANGEROEPEN
+
         $likesCount = 3;
         View::share('likesCount', $likesCount);
     }
