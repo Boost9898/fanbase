@@ -24,7 +24,12 @@
                             <input type="hidden" value="" name="like" id="like">
                             @foreach($items as $item)
                                 @if($item['id']==$id)
-                                    <button type="submit" class="btn btn-primary">💿 Likes: {{$item['like']}}
+                                    <button type="submit" class="btn btn-primary">💿 Likes:
+                                        @if($item['like'])
+                                            {{$item['like']}}
+                                        @else
+                                        0
+                                        @endif
                                 @endif
                             @endforeach
                             </button>

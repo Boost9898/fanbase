@@ -52,7 +52,7 @@
             <ul class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{route('root')}}">Home</a>
                 <a class="nav-item nav-link" href="{{route('media')}}">Media</a>
-                diepere
+{{--            diepere validatie: $likesCount komt uit AppServiceProvider.php--}}
                 @if(3 === $likesCount)
                     <a class="nav-item nav-link" href="{{route('media.create')}}">Create</a>
                 @endif
