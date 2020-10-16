@@ -21,6 +21,7 @@ class MediaItemController extends Controller
     {
         $items = MediaItems::all();
         $categories = Categories::all();
+
         return view('media', ['items' => $items], ['categories' => $categories]);
     }
 
@@ -92,7 +93,6 @@ class MediaItemController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-//    public function show($id)
     public function show()
     {
         $id = request('id');
