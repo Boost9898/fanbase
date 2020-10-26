@@ -5,7 +5,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Create</div>
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>Create</div>
+                    </div>
                     <div class="card-body">
                         @guest
                             <p>Log-in om deze pagina te bekijken.</p>

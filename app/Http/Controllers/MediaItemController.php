@@ -37,8 +37,8 @@ class MediaItemController extends Controller
 
         $user_id = \Auth::id();
 
-        $likesCount = 3;
-        View::share('likesCount', $likesCount);
+//        $likesCount = 3;
+        $likesCount = count(UserLikes::where('user_id', 'LIKE', $user_id)->get());
 
         return view('mediaCreate', ['categories' => $categories], ['likesCount' => $likesCount]);
     }
@@ -140,13 +140,6 @@ class MediaItemController extends Controller
         }
 
         return redirect('admin');
-
-//        $items = MediaItems::all();
-//        $users = User::all();
-//
-//        return view('admin',
-//            ['items' => $items],
-//            ['users' => $users]);
     }
 
     /**
