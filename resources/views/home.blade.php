@@ -15,7 +15,6 @@
                         @endif
                         {{ __('Je bent ingelogd') }}
 
-                        {{--Dit is een placeholders waar errors komen--}}
                         @if($errors->any())
                             <div>
                                 <br>

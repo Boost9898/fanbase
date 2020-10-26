@@ -25,7 +25,9 @@
                     </form>
                     <div>
                         @if($errors->any())
-                            <h4>{{$errors->first()}}</h4>
+                            <div class="card-body">
+                                <p class="alert alert-danger">{{$errors->first()}}</p>
+                            </div>
                         @endif
                     </div>
 

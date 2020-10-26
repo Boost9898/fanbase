@@ -52,10 +52,7 @@
             <ul class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{route('root')}}">Home</a>
                 <a class="nav-item nav-link" href="{{route('media')}}">Media</a>
-{{--            diepere validatie: $likesCount komt uit AppServiceProvider.php--}}
-                @if(3 === $likesCount)
-                    <a class="nav-item nav-link" href="{{route('media.create')}}">Create</a>
-                @endif
+                <a class="nav-item nav-link" href="{{route('media.create')}}">Create</a>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -83,7 +80,7 @@
                                 <a class="dropdown-item" href="{{route('overview')}}">Overzicht</a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
+                               onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>

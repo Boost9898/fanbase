@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\View;
 
 class MediaItemController extends Controller
 {
@@ -33,7 +34,13 @@ class MediaItemController extends Controller
     public function create()
     {
         $categories = Categories::all();
-        return view('mediaCreate', ['categories' => $categories]);
+
+        $user_id = \Auth::id();
+
+        $likesCount = 3;
+        View::share('likesCount', $likesCount);
+
+        return view('mediaCreate', ['categories' => $categories], ['likesCount' => $likesCount]);
     }
 
     /**
@@ -115,7 +122,7 @@ class MediaItemController extends Controller
         if (count($mediaItems) > 0) {
             return view('media', ['categories' => $categories], ['items' => $mediaItems]);
         } else {
-            return view('media', ['categories' => $categories], ['items' => $mediaItems])->withMessage('No Details found. Try to search again !');
+            return view('media', ['categories' => $categories], ['items' => $mediaItems])->withErrors(['Geen resultaten gevonden.']);
         }
     }
 
