@@ -27,7 +27,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Deeper validation works on likes/create">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Fixed error with variable in media.blade.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
@@ -256,14 +256,7 @@
       <workItem from="1602771977062" duration="104000" />
       <workItem from="1602834821552" duration="4480000" />
       <workItem from="1603281279130" duration="693000" />
-      <workItem from="1603701005586" duration="8938000" />
-    </task>
-    <task id="LOCAL-00010" summary="Changed the name 'image' to 'media' since the database changed the name of it">
-      <created>1600689441808</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1600689441808</updated>
+      <workItem from="1603701005586" duration="9810000" />
     </task>
     <task id="LOCAL-00011" summary="Changed the name 'image' to 'media' since the database changed the name of it">
       <created>1600689767166</created>
@@ -601,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603710140041</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="- Fixed error with variable in media.blade.php">
+      <created>1603718224154</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1603718224155</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +620,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Added admin role" />
     <MESSAGE value="- Admin is able to delete posts from database/site" />
     <MESSAGE value="- Users are visable in the admin.blade.php" />
     <MESSAGE value="- Admin page only accesable as user" />
@@ -645,7 +644,8 @@
     <MESSAGE value="- Working on deep validation&#10;- RIP, have to find a workaround to pass data through AppServiceProvider.php" />
     <MESSAGE value="- Working on deeper validation&#10;- Removed code from AppServiceProvider.php, moved to mediaCreate.blade.php&#10;- Improved error handling&#10;- More error feedback to user" />
     <MESSAGE value="- Deeper validation works on likes/create" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Deeper validation works on likes/create" />
+    <MESSAGE value="- Fixed error with variable in media.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed error with variable in media.blade.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">

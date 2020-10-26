@@ -42,7 +42,7 @@ class MediaItemController extends Controller
 
         $likesCount = count(UserLikes::where('user_id', 'LIKE', $user_id)->get());
 
-        return view('mediaCreate', ['categories' => $categories], ['likesCount' => $likesCount]);
+        return view('mediaCreate', compact('categories' , 'likesCount'));
     }
 
     /**
@@ -106,7 +106,7 @@ class MediaItemController extends Controller
     {
         $id = request('id');
         $items = MediaItems::all();
-        return view('mediaId', ['id' => $id], ['items' => $items]);
+        return view('mediaId', compact('id' , 'items'));
     }
 
     public function search(Request $request)
