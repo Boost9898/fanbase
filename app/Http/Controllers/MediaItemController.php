@@ -23,7 +23,10 @@ class MediaItemController extends Controller
         $items = MediaItems::all();
         $categories = Categories::all();
 
-        return view('media', ['items' => $items], ['categories' => $categories]);
+        $totalItems = count(MediaItems::where('status', '=', 'active')->get());
+
+        //return view('media', ['items' => $items, 'categories' => $categories, 'totalItems' => $totalItems]);
+        return view('media', compact('items', 'categories', 'totalItems'));
     }
 
     /**
@@ -37,7 +40,6 @@ class MediaItemController extends Controller
 
         $user_id = \Auth::id();
 
-//        $likesCount = 3;
         $likesCount = count(UserLikes::where('user_id', 'LIKE', $user_id)->get());
 
         return view('mediaCreate', ['categories' => $categories], ['likesCount' => $likesCount]);

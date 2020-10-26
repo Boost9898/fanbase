@@ -6,7 +6,10 @@
             <div class="col-md-8">
                 <div class="card">
 
-                    <div class="card-header">Media items</div>
+                    <div class="card-header d-flex justify-content-between align-items-centerr">
+                        <div>Media items</div>
+                        <div>Totaal: {{$totalItems}}</div>
+                    </div>
 
                     <form action="{{route('search')}}" method="POST" role="search">
                         @csrf

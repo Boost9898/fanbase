@@ -7,6 +7,9 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <div>Create</div>
+                        <div>
+                            <div class="badge badge-secondary">Likes: {{$likesCount}}</div>
+                        </div>
                     </div>
                     <div class="card-body">
                         @guest
@@ -22,7 +25,7 @@
                                     </ul>
                                 </div>
                             @endif
-                            @if(3 === $likesCount)
+                            @if($likesCount >= 3)
                                 <div class="card-body">
                                     <form method="post" id="mediaCreate" action="{{route('store.post')}}">
                                         @csrf
