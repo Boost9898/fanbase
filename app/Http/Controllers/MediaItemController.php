@@ -112,8 +112,11 @@ class MediaItemController extends Controller
     public function search(Request $request)
     {
         $categories = Categories::all();
+        $items = MediaItems::all();
         $searchName = $request->get('searchName');
         $category = $request->get('category');
+
+        $totalItems = count(MediaItems::where('status', '=', 'active')->get());
 
         if ($category == 'alles') {
             $mediaItems = MediaItems::where('title', 'LIKE', '%' . $searchName . '%')->get();
@@ -122,9 +125,9 @@ class MediaItemController extends Controller
         }
 
         if (count($mediaItems) > 0) {
-            return view('media', ['categories' => $categories], ['items' => $mediaItems]);
+            return view('media', ['categories' => $categories, 'items' => $mediaItems, 'totalItems' => $totalItems]);
         } else {
-            return view('media', ['categories' => $categories], ['items' => $mediaItems])->withErrors(['Geen resultaten gevonden.']);
+            return view('media', ['categories' => $categories, 'items' => $mediaItems, 'totalItems' => $totalItems])->withErrors(['Geen resultaten gevonden.']);
         }
     }
 

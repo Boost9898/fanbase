@@ -27,11 +27,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Fixed error with variable in media.blade.php">
+    <list default="true" id="b461d3ac-ed75-4161-be29-409995934302" name="Default Changelist" comment="- Used compact() function in controllers&#10;- Front-end design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/media.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mediaCreate.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +187,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hUcN3udhjGpChE83iBbFg9jLiM" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -256,14 +254,10 @@
       <workItem from="1602771977062" duration="104000" />
       <workItem from="1602834821552" duration="4480000" />
       <workItem from="1603281279130" duration="693000" />
-      <workItem from="1603701005586" duration="9810000" />
-    </task>
-    <task id="LOCAL-00011" summary="Changed the name 'image' to 'media' since the database changed the name of it">
-      <created>1600689767166</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1600689767166</updated>
+      <workItem from="1603701005586" duration="10495000" />
+      <workItem from="1603799489993" duration="1219000" />
+      <workItem from="1603875850218" duration="1029000" />
+      <workItem from="1603907518279" duration="850000" />
     </task>
     <task id="LOCAL-00012" summary="Added a many-to-many table">
       <created>1600704397585</created>
@@ -601,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603718224155</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="- Used compact() function in controllers&#10;- Front-end design">
+      <created>1603719118908</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1603719118908</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +621,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Admin is able to delete posts from database/site" />
     <MESSAGE value="- Users are visable in the admin.blade.php" />
     <MESSAGE value="- Admin page only accesable as user" />
     <MESSAGE value="- Added CSS (align text horizontally in tables)" />
@@ -645,7 +645,8 @@
     <MESSAGE value="- Working on deeper validation&#10;- Removed code from AppServiceProvider.php, moved to mediaCreate.blade.php&#10;- Improved error handling&#10;- More error feedback to user" />
     <MESSAGE value="- Deeper validation works on likes/create" />
     <MESSAGE value="- Fixed error with variable in media.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixed error with variable in media.blade.php" />
+    <MESSAGE value="- Used compact() function in controllers&#10;- Front-end design" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Used compact() function in controllers&#10;- Front-end design" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1117" y="371" key="#Custom_Plugin_Repositories" timestamp="1600070940754">
@@ -673,10 +674,10 @@
     </state>
     <state x="548" y="65" width="1197" height="774" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1600071028587" />
     <state x="381" y="160" width="1197" height="722" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1600933023684" />
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1602840762503">
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2" timestamp="1603719127842">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1602840762503" />
+    <state x="324" y="275" width="972" height="520" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1603719127842" />
     <state x="801" y="419" width="502" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600680585066">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -705,9 +706,9 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="561" y="248" key="run.anything.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1600951340922" />
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1603707325810">
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1603907720261">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1603707325810" />
+    <state x="561" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1603907720261" />
   </component>
 </project>
